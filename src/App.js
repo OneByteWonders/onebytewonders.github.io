@@ -9,13 +9,22 @@ function App() {
       <BrowserRouter>
       <ScrollToTop/>
         <Routes>
-          <Route path="/" element={<PrivacyPolicy />} />
+          <Route path="/" element={<Both />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
         </Routes>
       </BrowserRouter>
     </>
   );
+}
+
+const Both = () => {
+  return (
+    <>
+    <PrivacyPolicy></PrivacyPolicy>
+    <TermsAndConditions></TermsAndConditions>
+    </>
+  )
 }
 
 const PrivacyPolicy = () => {
