@@ -10,6 +10,7 @@ function App() {
       <ScrollToTop/>
         <Routes>
           <Route path="/" element={<PrivacyPolicy />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
         </Routes>
       </BrowserRouter>
